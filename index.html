@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshith Random Background Color</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #clbtn{
+            padding: 10px 20px;
+            color: black;
+            
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Background change Color</h1>
+    <button id="clbtn" onclick="changeColor()">Click Here!</button>
+    
+    <script>
+        function changeColor() {
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            
+            document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+        }
+    </script>
+</body>
+</html>
